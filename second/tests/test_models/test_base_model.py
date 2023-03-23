@@ -1,5 +1,6 @@
-
-m models.base_model import BaseModel
+#!/usr/bin/python3
+""" """
+from models.base_model import BaseModel
 import unittest
 import datetime
 from uuid import UUID
@@ -18,6 +19,7 @@ class test_basemodel(unittest.TestCase):
         self.value = BaseModel
     """
     A class to test pep8 on base_model file"""
+
     def test_pycodestyle(self):
         """
         Test pep8 format
@@ -34,7 +36,7 @@ class test_basemodel(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove('file.json')
-        except:
+        except FileNotFoundError:
             pass
 
     def test_default(self):
@@ -136,6 +138,7 @@ class test_basemodel(unittest.TestCase):
 class TestCodeFormat(unittest.TestCase):
     """
     A class to test pep8 on base_model file"""
+
     def test_pycodestyle(self):
         """
         Test pep8 format

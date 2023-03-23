@@ -1,1 +1,1 @@
-static wesite directory
+This directory implements webpage design.
